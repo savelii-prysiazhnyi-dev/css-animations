@@ -1,0 +1,507 @@
+/* ==========================================================================
+   Authentic Clip-Path Animations
+   ========================================================================== */
+
+.anim-cp-01 {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.anim-cp-01 .loader {
+width: 300px;
+  height: 60px;
+  border: 7px solid #0a3d62;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.anim-cp-01 span {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.anim-cp-01 .top-half {
+color: #ee5253;
+  animation: cp-01_split 4s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.anim-cp-01 .bottom-half {
+color: #0a3d62;
+  animation: cp-01_split 4s linear infinite reverse;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+@keyframes cp-01_split {
+0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.anim-cp-02 * {
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.anim-bg-cp-02 {
+  background-color: #2f2f2f;
+}
+
+.anim-cp-02 .wave {
+position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.anim-cp-02 h2 {
+position: absolute;
+  text-align: center;
+  line-height: 500px;
+  font-size: 170px;
+  text-transform: uppercase;
+}
+
+.anim-cp-02 h2:nth-child(1) {
+color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.anim-cp-02 h2:nth-child(2) {
+color: #03a9f4;
+  animation: cp-02_wave 2s ease-in-out infinite;
+}
+
+@keyframes cp-02_wave {
+0% {
+    clip-path: polygon(
+      0% 38%,
+      21% 40%,
+      38% 51%,
+      54% 57%,
+      75% 57%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 49%,
+      16% 56%,
+      33% 55%,
+      55% 50%,
+      75% 42%,
+      100% 40%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      0% 38%,
+      21% 40%,
+      38% 51%,
+      54% 57%,
+      75% 57%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.anim-bg-cp-03 {
+  background-color: #555;
+}
+
+.anim-cp-03 .container {
+position: relative;
+  width: 800px;
+  height: 500px;
+  background-color: #222;
+}
+
+.anim-cp-03 .clip {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.anim-cp-03 .clip1 {
+background: url("/assets/11-clip-path/03-image-hover/1.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 20% 0, 40% 100%, 0 100%);
+}
+
+.anim-cp-03 .clip2 {
+background: url("/assets/11-clip-path/03-image-hover/2.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(20% 0, 80% 0, 60% 100%, 40% 100%);
+}
+
+.anim-cp-03 .clip3 {
+background: url("/assets/11-clip-path/03-image-hover/3.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(80% 0, 100% 0, 100% 100%, 60% 100%);
+}
+
+.anim-cp-03 .container:hover .clip {
+clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.anim-cp-03 .container .clip:hover {
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.anim-cp-04 {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.anim-cp-04 .card {
+width: 500px;
+  height: 250px;
+  background-color: #c7ecee;
+  padding: 20px 80px 20px 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  clip-path: circle(7% at 93% 20%);
+}
+
+.anim-cp-04 h1 {
+margin-bottom: 20px;
+}
+
+.anim-cp-04 p {
+font-size: 18px;
+}
+
+.anim-cp-04 .card:hover {
+clip-path: circle(70.7% at 50% 50%);
+}
+
+.anim-bg-cp-05 {
+  background-color: #c8d6e5;
+}
+
+.anim-cp-05 .main {
+position: relative;
+  width: 800px;
+}
+
+.anim-cp-05 h1 {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 220px;
+  
+  text-transform: uppercase;
+}
+
+.anim-cp-05 h1:nth-child(2) {
+color: white;
+  transition: all 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+  background-color: #c8d6e5;
+}
+
+.anim-cp-05 h1:nth-child(2):hover {
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.anim-cp-05 h1:nth-child(1):hover ~ h1 {
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.anim-cp-06 {
+  font-family: sans-serif;
+}
+
+.anim-cp-06 .card {
+position: relative;
+  width: 335px;
+  height: 500px;
+}
+
+.anim-cp-06 .img {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+.anim-cp-06 img {
+width: 100%;
+}
+
+.anim-cp-06 .card:hover .img {
+clip-path: circle(18.2% at 50% 38%);
+}
+
+.anim-cp-06 .content {
+position: absolute;
+  left: 0;
+  bottom: 50px;
+  text-align: center;
+}
+
+.anim-cp-06 h2 {
+padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.anim-cp-06 p {
+margin-bottom: 25px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.anim-cp-06 a {
+display: inline-block;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  text-transform: capitalize;
+}
+
+.anim-cp-06 h2, .anim-cp-06 p, .anim-cp-06 a {
+opacity: 0;
+  transition: 0.3s;
+  transform: translateY(20px);
+}
+
+.anim-cp-06 .card:hover h2, .anim-cp-06 .card:hover p, .anim-cp-06 .card:hover a {
+opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.anim-cp-07 {
+  font-family: sans-serif;
+}
+
+.anim-cp-07 .card {
+position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+}
+
+.anim-cp-07 .content {
+position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.anim-cp-07 h2 {
+margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.anim-cp-07 p {
+margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.anim-cp-07 a {
+display: inline-block;
+  padding: 10px 10px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+
+.anim-cp-07 a:hover {
+color: black;
+  background-color: white;
+}
+
+.anim-cp-07 img {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.anim-cp-07 img:hover {
+clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+}
+
+.anim-bg-cp-08 {
+  background-color: rgb(236, 236, 236);
+}
+
+.anim-cp-08 {
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.anim-cp-08 ul {
+margin: 0;
+  padding: 0;
+}
+
+.anim-cp-08 li {
+position: relative;
+  list-style-type: none;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+
+.anim-cp-08 a {
+position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 60px;
+  font-weight: 900;
+  text-decoration: none;
+  color: transparent;
+}
+
+.anim-cp-08 a:before {
+content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  color: #262626;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+.anim-cp-08 a:after {
+content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  color: #262626;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+.anim-cp-08 a:hover:before {
+color: rgb(160, 0, 0);
+  transform: translate(10px, -3px);
+}
+
+.anim-cp-08 a:hover:after {
+color: rgb(160, 0, 0);
+  transform: translate(-10px, 3px);
+}
+
+.anim-cp-08 li:before {
+content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: #262626;
+  left: -100%;
+  transition: 0.5s;
+}
+
+.anim-cp-08 li:hover:before {
+left: 100%;
+}
+
+.anim-cp-09 * {
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.anim-bg-cp-09 {
+  background: #222;
+}
+
+.anim-cp-09 a {
+position: relative;
+  width: 180px;
+  height: 60px;
+}
+
+.anim-cp-09 a span {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #4834d4;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+
+.anim-cp-09 span:nth-child(2) {
+background-color: white;
+  color: #4834d4;
+  transition: 0.5s;
+  clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 50%);
+}
+
+.anim-cp-09 span:nth-child(2):hover {
+clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+}
+
+.anim-cp-09 span:nth-child(1):hover ~ span {
+clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 50%);
+}
