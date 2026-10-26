@@ -5,6 +5,7 @@
 @import "./styles/menus.css";
 @import "./styles/cards.css";
 @import "./styles/transforms.css";
+@import "./styles/keyframes.css";
 
 @layer base {
   html,
