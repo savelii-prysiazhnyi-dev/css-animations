@@ -2,6 +2,7 @@
 
 @import "./styles/buttons.css";
 @import "./styles/images.css";
+@import "./styles/menus.css";
 
 @layer base {
   html,
