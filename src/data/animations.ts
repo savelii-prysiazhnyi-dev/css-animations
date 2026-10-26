@@ -365,4 +365,32 @@ export const allAnimations: AnimationItem[] = [
     html: "<div class=\"card\">\n      <div class=\"imgbox\">\n        <img src=\"/assets/07-cards/07-scaling/1.jpg\" alt=\"image\" />\n      </div>\n      <div class=\"content\">\n        <h2>post title</h2>\n        <p>\n          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut in earum\n          in earum iste quae ad corrupti eum molestias magnam, eos libero fuga\n          quae ad corrupti eum molestias magnam, eos libero fugaea sit\n          voluptatem quidem?\n        </p>\n        <a href=\"#preview\">read more</a>\n      </div>\n    </div>",
     scale: 0.52,
   },
+  {
+    id: "tf-01",
+    title: "Smoky Text Dispersion",
+    category: "transforms",
+    html: "<ul>\n      <li>S</li>\n      <li>M</li>\n      <li>O</li>\n      <li>K</li>\n      <li>Y</li>\n    </ul>",
+    scale: 0.45,
+  },
+  {
+    id: "tf-02",
+    title: "Liquid Water Text Fill",
+    category: "transforms",
+    html: "<h1>text</h1>",
+    scale: 0.5,
+  },
+  {
+    id: "tf-03",
+    title: "Isometric Layered Icons",
+    category: "transforms",
+    html: "<div class=\"container\">\n      <a href=\"#preview\" class=\"icon\">\n        <i class=\"fab fa-facebook-f\"></i>\n      </a>\n      <a href=\"#preview\" class=\"icon\">\n        <i class=\"fab fa-twitter\"></i>\n      </a>\n      <a href=\"#preview\" class=\"icon\">\n        <i class=\"fab fa-google\"></i>\n      </a>\n      <a href=\"#preview\" class=\"icon\">\n        <i class=\"fab fa-youtube\"></i>\n      </a>\n      <a href=\"#preview\" class=\"icon\">\n        <i class=\"fab fa-instagram\"></i>\n      </a>\n    </div>",
+    scale: 0.6,
+  },
+  {
+    id: "tf-04",
+    title: "Rotating Border Badge",
+    category: "transforms",
+    html: "<div class=\"box\">\n      <span class=\"rotated\"> </span>\n      <h1>\n        CSS<br />\n        <span>border</span>\n        <br />\n        hover<br />\n        effect\n      </h1>\n    </div>",
+    scale: 0.6,
+  },
 ]
