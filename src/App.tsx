@@ -47,6 +47,10 @@ export default function App() {
           ))}
         </div>
       </main>
+
+      <footer className="border-t border-neutral-900 py-4 px-6 text-center text-xs text-neutral-600 font-mono">
+        Showing {filteredAnimations.length} of {allAnimations.length} animations
+      </footer>
     </div>
   )
 }

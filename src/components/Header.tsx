@@ -50,8 +50,8 @@ export function Header({
               >
                 <span>{label}</span>
                 <span
-                  className={`text-[10px] px-1.5 py-0.2 rounded font-mono ${
-                    isActive ? 'bg-neutral-200 text-neutral-900 font-semibold' : 'bg-neutral-800 text-neutral-500'
+                  className={`text-[10px] px-1.5 py-0.5 rounded font-mono ${
+                    isActive ? 'bg-neutral-200 text-neutral-900 font-semibold' : 'bg-neutral-800 text-neutral-400'
                   }`}
                 >
                   {count}
