@@ -6,6 +6,7 @@
 @import "./styles/cards.css";
 @import "./styles/transforms.css";
 @import "./styles/keyframes.css";
+@import "./styles/loaders.css";
 
 @layer base {
   html,
