@@ -1,5 +1,3 @@
-import type { ReactNode } from 'react'
-
 export type AnimationCategory =
   | 'all'
   | 'buttons'
@@ -15,6 +13,7 @@ export interface AnimationItem {
   id: string
   title: string
   category: AnimationCategory
-  render: () => ReactNode
+  html: string
+  scale?: number
   description?: string
 }
