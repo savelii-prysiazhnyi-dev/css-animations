@@ -853,3 +853,7 @@ transform: translateY(-300px);
 transform: translateY(0);
   transition-delay: 0.9s;
 }
+
+.anim-img-11 .container {
+  overflow: hidden;
+}

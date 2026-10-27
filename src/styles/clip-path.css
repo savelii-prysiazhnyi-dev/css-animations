@@ -204,6 +204,16 @@ font-size: 18px;
 clip-path: circle(70.7% at 50% 50%);
 }
 
+.anim-cp-04 .card {
+  color: #222f3e;
+}
+.anim-cp-04 h1 {
+  color: #222f3e;
+}
+.anim-cp-04 p {
+  color: #222f3e;
+}
+
 .anim-bg-cp-05 {
   background-color: #c8d6e5;
 }
@@ -367,8 +377,12 @@ position: absolute;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.anim-cp-07 img:hover {
+.anim-cp-07 .card:hover img {
 clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+}
+
+.anim-cp-07 .card {
+  overflow: hidden;
 }
 
 .anim-bg-cp-08 {

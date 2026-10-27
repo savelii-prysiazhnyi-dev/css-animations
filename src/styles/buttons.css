@@ -38,6 +38,10 @@ content: '';
 transform: rotate(0deg) scale(1.2);
 }
 
+.anim-bg-btn-01 {
+  background-color: #ffffff;
+}
+
 .anim-btn-02 a {
 text-decoration: none;
   color: #351435;
@@ -73,6 +77,10 @@ color: #fff;
 
 .anim-btn-02 a:hover:before {
 transform: translateX(0);
+}
+
+.anim-bg-btn-02 {
+  background-color: #ffffff;
 }
 
 .anim-btn-03 a {
@@ -123,6 +131,10 @@ transform: rotateX(0deg);
 
 .anim-btn-03 a:hover:after {
 transform: rotateY(0deg);
+}
+
+.anim-bg-btn-03 {
+  background-color: #ffffff;
 }
 
 .anim-btn-04 a {
@@ -271,6 +283,10 @@ transform: translate(100%, -100%);
 transform: translate(0, 0);
 }
 
+.anim-bg-btn-07 {
+  background-color: #ffffff;
+}
+
 .anim-btn-08 a {
 text-decoration: none;
   color: #262626;
@@ -303,6 +319,10 @@ content: 'Hover Me';
 .anim-btn-08 a:hover:before {
 transform: scale(1);
   opacity: 1;
+}
+
+.anim-bg-btn-08 {
+  background-color: #ffffff;
 }
 
 .anim-btn-09 .btn {
@@ -918,6 +938,10 @@ color: white;
   transform: translate(-65%, -10%) rotate(360deg);
 }
 
+.anim-bg-btn-18 {
+  background-color: #ffffff;
+}
+
 .anim-bg-btn-19 {
   background-color: #272727;
 }
@@ -1115,6 +1139,10 @@ width: 100%;
 
 .anim-btn-21 a:hover {
 color: white;
+}
+
+.anim-bg-btn-21 {
+  background-color: #ffffff;
 }
 
 .anim-bg-btn-22 {

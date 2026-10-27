@@ -125,6 +125,13 @@ top: -12px;
   opacity: 1;
 }
 
+.anim-bg-menu-02 {
+  background-color: #ffffff;
+}
+.anim-menu-02 ul {
+  white-space: nowrap;
+}
+
 .anim-menu-03 {
   font-family: sans-serif;
 }
@@ -185,6 +192,13 @@ left: 75%;
   transition-delay: 0.45s;
 }
 
+.anim-bg-menu-03 {
+  background-color: #ffffff;
+}
+.anim-menu-03 ul {
+  white-space: nowrap;
+}
+
 .anim-menu-04 {
   font-family: sans-serif;
   font-family: verdana;
@@ -238,6 +252,13 @@ width: 50%;
 .anim-menu-04 ul li a:hover:after {
 width: 50%;
   transform: translateX(-100%);
+}
+
+.anim-bg-menu-04 {
+  background-color: #ffffff;
+}
+.anim-menu-04 ul {
+  white-space: nowrap;
 }
 
 .anim-bg-menu-05 {
@@ -374,6 +395,20 @@ transform: scaleX(1);
   transition-delay: 0.4s;
 }
 
+.anim-menu-06 a {
+  height: 40px;
+  box-sizing: content-box;
+  padding: 0 15px;
+  line-height: 40px;
+  overflow: hidden;
+}
+.anim-menu-06 ul li a span {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .anim-menu-07 {
   font-family: 'Raleway', arial, sans-serif;
 }
@@ -438,6 +473,13 @@ content: '';
 
 .anim-menu-07 a:hover:after {
 transform: scale(1);
+}
+
+.anim-bg-menu-07 {
+  background-color: #ffffff;
+}
+.anim-menu-07 ul {
+  white-space: nowrap;
 }
 
 .anim-bg-menu-08 {
@@ -549,6 +591,10 @@ bottom: -10px;
 bottom: -10px;
   right: -10px;
   opacity: 1;
+}
+
+.anim-menu-08 ul {
+  white-space: nowrap;
 }
 
 .anim-bg-menu-09 {
